@@ -1,0 +1,40 @@
+﻿<Window x:Class="OProfTest.MVVM.View.ClientsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:viewModel="clr-namespace:OProfTest.MVVM.ViewModel"
+        xmlns:local="clr-namespace:OProfTest.MVVM.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize"
+        FontFamily="Microsoft YaHei"
+        Title="OProfTest" Height="700" Width="1200" Icon="../../Image/mainIcon64.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100px"></RowDefinition>
+            <RowDefinition Height="400px"></RowDefinition>
+            <RowDefinition Height="150px"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100px"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="100px"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock TextWrapping="Wrap" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" Height="40px" Width="420px" FontSize="26px" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Список участников"></TextBlock>
+        <DataGrid SelectedItem ="{Binding SelectedUser}" HorizontalContentAlignment="Center" ItemsSource="{Binding Users}" AutoGenerateColumns="True" Foreground="Black" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="1" Background="LightGray" BorderBrush="Black" >
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Background" Value="LightGray"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
+        <Button Command="{Binding ChangeUser}" Grid.Column="1" Grid.Row="2" Content="Изменить участника" Style="{StaticResource StartButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="350px" Height="70px" Cursor="Hand"/>
+        <Button Command="{Binding DeleteUser}" Grid.Column="2" Grid.Row="2" Content="Удалить участника" Style="{StaticResource DeleteButtonTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="350px" Height="70px" Cursor="Hand"/>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+.vs/*
+tests/*
+data.txt
+*.sql
+*.sln
+правки.txt
+packages/*
+tests/*
+OProfTest/bin/*

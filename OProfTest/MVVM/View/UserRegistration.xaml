@@ -1,0 +1,50 @@
+﻿<Window x:Class="OProfTest.MVVM.View.UserRegistration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:OProfTest.MVVM.View"
+        xmlns:viewModel="clr-namespace:OProfTest.MVVM.ViewModel"
+        xmlns:components="clr-namespace:OProfTest.MVVM.Components"
+        mc:Ignorable="d"
+        Title="Authorization" Height="590" Width="350"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Icon="../../Image/mainIcon64.ico"
+        FontFamily="Microsoft YaHei">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Right" BorderThickness="0" Width="25" Height="25" Cursor="Hand" Click="closeButtonClick" >
+            <Button.Background>
+                <ImageBrush ImageSource="../../Image/closeIcon.jpg" />
+            </Button.Background>
+        </Button>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" FontSize="22px" FontWeight="SemiBold" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{DynamicResource Registration}"></TextBlock>
+        <Image Source="../../Image/mainIcon64.jpg" Grid.Row="2" Width="45" Height="45" Grid.ColumnSpan="2"></Image>
+        <TextBox Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Height="40px" Width="115" Margin="42 0 0 0" materialDesign:HintAssist.Hint="Имя" Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+        <TextBox Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Height="40px" Width="115" Margin="0 0 42 0" materialDesign:HintAssist.Hint="Фамилия" Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+        <TextBox Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4"  Grid.ColumnSpan="2" VerticalAlignment="Center" Height="40px" Width="250px" materialDesign:HintAssist.Hint="Возраст" Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+        <TextBox Text="{Binding Login, UpdateSourceTrigger=PropertyChanged}" Grid.Row="5"  Grid.ColumnSpan="2" VerticalAlignment="Center" Height="40px" Width="250px" materialDesign:HintAssist.Hint="Логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+        <components:BindablePasswordBox  Password="{Binding Password1}"  Grid.Row="6"  Grid.ColumnSpan="2" VerticalAlignment="Center" Height="40px" Width="250px" materialDesign:HintAssist.Hint="Пароль"/>
+        <components:BindablePasswordBox  Password="{Binding Password2}"  Grid.Row="7" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="40px" Width="250px" materialDesign:HintAssist.Hint="Повторите пароль"/>
+        <Button Command="{Binding Register}" Grid.Row="8" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Width="250px" Height="45px" FontSize="18" FontWeight="SemiBold" Cursor="Hand" Style="{StaticResource EnterButtonTemplate}" Content="{DynamicResource CreateAccount}"></Button>
+        <Button Grid.Row="9" Grid.ColumnSpan="2" Width="250px" Height="30px" FontSize="12" FontWeight="Medium" VerticalAlignment="Center" BorderBrush="{x:Null}" Content="{DynamicResource BackToAuthorization}" Background="{x:Null}" Click="backToAuthorizationClick"></Button>
+    </Grid>
+</Window>

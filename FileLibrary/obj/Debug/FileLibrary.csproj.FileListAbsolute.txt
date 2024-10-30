@@ -1,0 +1,15 @@
+E:\Study\5Sem\Cursach\FinalProductShop-main\FileLibrary\bin\Debug\FileLibrary.dll
+E:\Study\5Sem\Cursach\FinalProductShop-main\FileLibrary\bin\Debug\FileLibrary.pdb
+E:\Study\5Sem\Cursach\FinalProductShop-main\FileLibrary\bin\Debug\ModelsLibrary.dll
+E:\Study\5Sem\Cursach\FinalProductShop-main\FileLibrary\bin\Debug\ModelsLibrary.pdb
+E:\Study\5Sem\Cursach\FinalProductShop-main\FileLibrary\obj\Debug\FileLibrary.csproj.AssemblyReference.cache
+E:\Study\5Sem\Cursach\FinalProductShop-main\FileLibrary\obj\Debug\FileLibrary.csproj.CoreCompileInputs.cache
+E:\Study\5Sem\Cursach\FinalProductShop-main\FileLibrary\obj\Debug\FileLibrary.csproj.CopyComplete
+E:\Study\5Sem\Cursach\FinalProductShop-main\FileLibrary\obj\Debug\FileLibrary.dll
+E:\Study\5Sem\Cursach\FinalProductShop-main\FileLibrary\obj\Debug\FileLibrary.pdb
+C:\Users\srmzhk\Desktop\prog\OProfTest\FileLibrary\bin\Debug\FileLibrary.dll
+C:\Users\srmzhk\Desktop\prog\OProfTest\FileLibrary\bin\Debug\FileLibrary.pdb
+C:\Users\srmzhk\Desktop\prog\OProfTest\FileLibrary\obj\Debug\FileLibrary.csproj.AssemblyReference.cache
+C:\Users\srmzhk\Desktop\prog\OProfTest\FileLibrary\obj\Debug\FileLibrary.csproj.CoreCompileInputs.cache
+C:\Users\srmzhk\Desktop\prog\OProfTest\FileLibrary\obj\Debug\FileLibrary.dll
+C:\Users\srmzhk\Desktop\prog\OProfTest\FileLibrary\obj\Debug\FileLibrary.pdb

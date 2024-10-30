@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+    <!--Start Window-->
+    <v:String x:Key="Hello">Добро пожаловать!</v:String>
+    <v:String x:Key="AboutStart">Приложение "OProfTests" – ваш путь к открытию потенциала и выбору наилучшего профессионального пути! 
+Приложение предоставляет уникальную возможность проходить профориентационные тесты, которые помогут вам лучше понять свои интересы, навыки и возможности. Независимо от того, вы в начале своей карьеры или на перекрестке профессиональных возможностей, мы здесь, чтобы помочь вам принимать осознанные решения.</v:String>
+    <v:String x:Key="Autorization">Авторизация</v:String>
+    <v:String x:Key="Cancel">Выход</v:String>
+    <v:String x:Key="Enter">Войти</v:String>
+    <v:String x:Key="BackToRegister">Нет аккаунта? Регистрация</v:String>
+    <v:String x:Key="Registration">Регистрация</v:String>
+    <v:String x:Key="BackToAuthorization">Уже есть аккаунт? Войти</v:String>
+    <v:String x:Key="CreateAccount">Создать аккаунт</v:String>
+    <v:String x:Key="SucsesRegistration">Успешная регистрация!</v:String>
+    <v:String x:Key="TitleTestsCatalog">Тесты по профориентации</v:String>
+</ResourceDictionary>

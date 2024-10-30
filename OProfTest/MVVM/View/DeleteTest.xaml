@@ -1,0 +1,24 @@
+﻿<Window x:Class="OProfTest.MVVM.View.DeleteTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:viewModel="clr-namespace:OProfTest.MVVM.ViewModel"
+        xmlns:local="clr-namespace:OProfTest.MVVM.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize"
+        Title="OProfTest" Height="350" Width="700" Icon="../../Image/mainIcon64.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100px"></RowDefinition>
+            <RowDefinition Height="100px"></RowDefinition>
+            <RowDefinition Height="100px"></RowDefinition>
+            <RowDefinition Height="100px"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock TextWrapping="Wrap" Grid.Row="0" Height="50px" Width="420px" FontSize="22px" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Center"><Run Text="Выберите тест для его удаления"/></TextBlock>
+        <ComboBox SelectedItem="{Binding SelectedTest}" DisplayMemberPath="Title" ItemsSource="{Binding Tests, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Width="400px" BorderBrush="Black" HorizontalAlignment="Center"></ComboBox>
+        <Button Command="{Binding DeleteTest}" Grid.Row="2" Content="Удалить тест" Style="{StaticResource DeleteButtonTemplate}" VerticalAlignment="Center" Width="400px" Height="70px" Cursor="Hand"/>
+    </Grid>
+</Window>

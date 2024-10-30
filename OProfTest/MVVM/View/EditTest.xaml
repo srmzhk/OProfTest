@@ -1,0 +1,38 @@
+﻿<Window x:Class="OProfTest.MVVM.View.EditTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:viewModel="clr-namespace:OProfTest.MVVM.ViewModel"
+        xmlns:local="clr-namespace:OProfTest.MVVM.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize"
+        Title="OProfTest" Height="860" Width="700" Icon="../../Image/mainIcon64.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100px"></RowDefinition>
+            <RowDefinition Height="100px"></RowDefinition>
+            <RowDefinition Height="230px"></RowDefinition>
+            <RowDefinition Height="70px"></RowDefinition>
+            <RowDefinition Height="220px"></RowDefinition>
+            <RowDefinition Height="100px"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock TextWrapping="Wrap" Grid.Row="0" Height="50px" Width="420px" FontSize="22px" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Center"><Run Text="Выберите тест для его редактирвоания "/></TextBlock>
+        <ComboBox SelectedItem="{Binding SelectedTest}" DisplayMemberPath="Title" ItemsSource="{Binding Tests, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Width="400px" BorderBrush="Black" HorizontalAlignment="Center"></ComboBox>
+        <Button Grid.Row="2" Width="350px" Height="210px" BorderThickness="0" BorderBrush="White" Background="Transparent" Command="{Binding OpenFileDialog}" >
+            <Border Height="200"
+            Width="300"
+            CornerRadius="10"
+        BorderThickness="1.6" BorderBrush="Gray">
+                <Border.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="{Binding ImagePath, UpdateSourceTrigger=PropertyChanged}"/>
+                </Border.Background>
+            </Border>
+        </Button>
+        <TextBox FontSize="16px" Grid.Row="3" Padding="10px 0" Text="{Binding Title, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Height="40px" Width="500px" materialDesign:HintAssist.Hint="Название" Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+        <TextBox FontSize="16px" TextWrapping="Wrap" BorderBrush="Black" BorderThickness="1" Padding="10px" Grid.Row="4" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Height="200px" Width="500px" materialDesign:HintAssist.Hint="Описание" Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+        <Button Command="{Binding ChangeTest}" Grid.Row="5" Content="Изменить тест" Style="{StaticResource StartButtonTemplate}" VerticalAlignment="Center" Width="400px" Height="70px" Cursor="Hand"/>
+    </Grid>
+</Window>

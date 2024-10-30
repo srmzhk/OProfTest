@@ -1,0 +1,28 @@
+﻿<Window x:Class="OProfTest.MVVM.View.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModel="clr-namespace:OProfTest.MVVM.ViewModel"
+        xmlns:local="clr-namespace:OProfTest.MVVM.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize"
+        Title="OProfTest" Height="650" Width="1000" Icon="../../Image/mainIcon64.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70px"></RowDefinition>
+            <RowDefinition Height="310px"></RowDefinition>
+            <RowDefinition Height="100px"></RowDefinition>
+            <RowDefinition Height="100px"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="{DynamicResource Hello}" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26px" FontWeight="Bold" FontFamily="Microsoft YaHei"></TextBlock>
+        <TextBlock Text="{DynamicResource AboutStart}" Grid.Row="1" Width="480px" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="20px" FontFamily="Times New Roman"></TextBlock>
+        <Button Content="{DynamicResource Autorization}" Style="{StaticResource StartButtonTemplate}" Grid.Row="2" Width="400px" Height="70px" Cursor="Hand" Click="toAuthorizationClick"/>
+        <Button Content="{DynamicResource Cancel}" Style="{StaticResource CancelButtonTemplate}" Grid.Row="3" Width="400px" Height="70px" Cursor="Hand" Click="cancelButtonClick"/>
+    </Grid>
+</Window>

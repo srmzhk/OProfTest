@@ -1,0 +1,12 @@
+E:\Study\5Sem\Cursach\FinalProductShop-main\HashGenerators\bin\Debug\HashGenerators.dll
+E:\Study\5Sem\Cursach\FinalProductShop-main\HashGenerators\bin\Debug\HashGenerators.pdb
+E:\Study\5Sem\Cursach\FinalProductShop-main\HashGenerators\obj\Debug\HashGenerators.csproj.AssemblyReference.cache
+E:\Study\5Sem\Cursach\FinalProductShop-main\HashGenerators\obj\Debug\HashGenerators.csproj.CoreCompileInputs.cache
+E:\Study\5Sem\Cursach\FinalProductShop-main\HashGenerators\obj\Debug\HashGenerators.dll
+E:\Study\5Sem\Cursach\FinalProductShop-main\HashGenerators\obj\Debug\HashGenerators.pdb
+C:\Users\srmzhk\Desktop\prog\OProfTest\HashGenerators\bin\Debug\HashGenerators.dll
+C:\Users\srmzhk\Desktop\prog\OProfTest\HashGenerators\bin\Debug\HashGenerators.pdb
+C:\Users\srmzhk\Desktop\prog\OProfTest\HashGenerators\obj\Debug\HashGenerators.csproj.AssemblyReference.cache
+C:\Users\srmzhk\Desktop\prog\OProfTest\HashGenerators\obj\Debug\HashGenerators.csproj.CoreCompileInputs.cache
+C:\Users\srmzhk\Desktop\prog\OProfTest\HashGenerators\obj\Debug\HashGenerators.dll
+C:\Users\srmzhk\Desktop\prog\OProfTest\HashGenerators\obj\Debug\HashGenerators.pdb
